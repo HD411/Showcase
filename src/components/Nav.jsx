@@ -1,21 +1,36 @@
 import React from 'react';
-function Nav() {
+import Nav from 'react-bootstrap/Nav';
+
+function Navs() {
+  let urlElements = window.location.href.split('/');
+  let length = urlElements.length;
+  let urlElelement = urlElements[length - 1];
+  console.log(urlElelement);
   return (
-    <nav class="Links">
-      <a href="#Iconic">Iconic</a>
-      <a href="#Classics">Classics</a>
-      <a href="#French">French</a>
-      <a href="#Brennan">Brennan</a>
-      <a href="#Eames">Eames</a>
-      <a href="#Lynch">Lynch</a>
-      <a href="#Abercrombie">Abercrombie</a>
-      <a href="#Sanderson">Sanderson</a>
-      <a href="#Bardugo">Bardugo</a>
-      <a href="#Black-libary">Black Libary</a>
-      <a href="#Other">Other</a>
-      <a href="#Not-Started">Not Started</a>
-      <a href="#Unfinished">Unfinished</a>
-    </nav>
+    <>
+      <Nav variant="tabs" defaultActiveKey={'/' + urlElelement}>
+        <Nav.Item>
+          <Nav.Link href="/Home">
+            <h3 className="small-header">Home</h3>
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/Frontend">
+            <h3 className="small-header">Front End</h3>
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/JavaScript">
+            <h3 className="small-header">JavaScript</h3>
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/Reactpage">
+            <h3 className="small-header">React</h3>
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
+    </>
   );
 }
-export default Nav;
+export default Navs;
