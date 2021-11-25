@@ -28,7 +28,7 @@ function ReactCards() {
               used the Bootstrap module of React to make it quicker/easier for
               me to style this app as I made it in only a few days.
             </Card.Text>
-            <Button variant="primary" href="">
+            <Button variant="primary" href="https://github.com/HD411/Showcase">
               GitHub
             </Button>
           </Card.Body>
@@ -56,10 +56,7 @@ function ReactCards() {
               certain users to push data through and the ability for each user
               to have their own bookshelf.
             </Card.Text>
-            <Button
-              variant="primary"
-              href="https://619fbe93cff9300007e44e8d--xenodochial-hoover-17eca9.netlify.app/"
-            >
+            <Button variant="primary" href="/">
               Bookshelf
             </Button>
             <span> </span>
