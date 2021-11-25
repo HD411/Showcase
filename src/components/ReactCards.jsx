@@ -56,7 +56,7 @@ function ReactCards() {
               certain users to push data through and the ability for each user
               to have their own bookshelf.
             </Card.Text>
-            <Button variant="primary" href="/">
+            <Button variant="primary" href="https://bookshelf-h.herokuapp.com/">
               Bookshelf
             </Button>
             <span> </span>
